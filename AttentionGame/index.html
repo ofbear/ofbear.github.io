@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="keywords" content="注意力遊戯">
+	<meta name="description" content="人間の注意力を競うゲーム">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>注意力遊戯</title>
+</head>
+
+<body>
+	<header>
+		<h1>注意力<span id="sp">遊</span>戯</h1>
+		<span id="rest"></span>
+		<nav>
+			<a href="index.html">
+				<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+					xml:space="preserve">
+					<g>
+						<path d="M452.421,155.539c-36.6-36.713-87.877-59.612-143.839-59.579h-87.179V9.203L5.513,228.805h215.889h87.179
+							c19.702,0.033,36.924,7.8,49.898,20.659c12.876,12.99,20.644,30.212,20.676,49.914c-0.032,19.703-7.8,36.924-20.676,49.898
+							c-12.974,12.876-30.196,20.642-49.898,20.676H0v132.844h308.582c55.962,0.033,107.239-22.866,143.839-59.579
+							c36.715-36.6,59.612-87.877,59.579-143.84C512.033,243.416,489.136,192.14,452.421,155.539z"></path>
+					</g>
+				</svg>
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<div id="setting">
+			<table>
+				<tr>
+					<td>time</td>
+					<td>
+						<select id="time" name="time">
+							<option value="5">5min</option>
+							<option value="10">10min</option>
+							<option value="20">20min</option>
+							<option value="30">30min</option>
+							<option value="60">60min</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>player</td>
+					<td>
+						<select id="number" name="number">
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button type="button" id="button">start</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="game">
+
+		</div>
+	</main>
+
+	<footer>
+		<address><a href="https://twitter.com/galapagosof">(C) ArkOfGalapagos 2000-2019</a></address>
+	</footer>
+
+	<script src="js/FixScreen.js"></script>
+	<script src="js/AttentionGame.js"></script>
+	<script src="js/ManageGame.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

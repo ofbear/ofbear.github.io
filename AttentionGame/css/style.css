@@ -1,0 +1,203 @@
+/*--------------------------------------
+	reset
+--------------------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	box-sizing: border-box;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*--------------------------------------
+	global
+--------------------------------------*/
+@font-face {
+	font-family: 'SoukouMincho';
+	src: url('../font/SoukouMincho-Font/SoukouMincho.ttf') format('TrueType');
+}
+
+:root {
+	--global_width: 750px;
+	--sp_font: "SoukouMincho";
+	--base_back: white;
+	--base_font: black;
+	--point_back: black;
+	--point_font: white;
+	--sp_color: yellow;
+}
+
+/*--------------------------------------
+	link
+--------------------------------------*/
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus
+{
+	color: var(--base_font);
+	text-decoration:none;
+}
+
+a:hover,
+a:active,
+a:focus
+{
+	color: var(--point_back);
+	text-decoration:none;
+}
+
+/*--------------------------------------
+	body
+--------------------------------------*/
+body {
+	background-color: var(--base_back);
+	font-size: 14px;
+	text-align: center;
+	height: 500px;
+}
+
+#sp {
+	color: var(--sp_color);
+}
+
+/*--------------------------------------
+	header
+--------------------------------------*/
+header {
+	background-color: var(--point_back);
+	color: var(--point_font);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: auto;
+	padding: 0 20px;
+
+	height: 50px;
+	width: var(--global_width);
+	position: sticky;
+	top: 0;
+}
+
+header h1 {
+	display: inline-block;
+	font-family: var(--sp_font);
+	font-size: 30px;
+	font-weight: 700;
+}
+
+header nav {
+	display: none;
+}
+
+header nav a svg {
+	fill: var(--sp_color);
+	width: 25px;
+
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*--------------------------------------
+	main
+--------------------------------------*/
+main {
+	background-color: var(--base_back);
+	border: solid 1px var(--point_back);
+	margin: auto;
+
+	height: 450px;
+	width: var(--global_width);
+}
+
+main div {
+	height: 100%;
+}
+
+main #setting {
+	padding: 20px;
+}
+
+main #game {
+	display: none;
+}
+
+main #game span {
+	display: block;
+}
+
+main table {
+	font-size: 18px;
+
+	display: inline-block;
+	text-align: left;
+
+	border-collapse: separate;
+    border-spacing: 5px;
+}
+
+main table select {
+	font-size: 20px;
+}
+
+main table button {
+	font-size: 18px;
+	width: 100%;
+	padding: 10px;
+}
+
+/*--------------------------------------
+	footer
+--------------------------------------*/
+footer {
+	background-color: var(--point_back);
+	font-size: 10px;
+	margin: auto;
+	padding: 6px;
+
+	height: 30px;
+	width: var(--global_width);
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active,
+footer a:focus
+{
+	color: var(--sp_color);
+	text-decoration:none;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus
+{
+	color: var(--sp_color);
+	text-decoration:none;
+}
+
+/*--------------------------------------
+	responsive
+--------------------------------------*/
+@media screen and (max-width: 749px) {
+header {
+	width: 100%;
+}
+
+main {
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+}
+
+}
