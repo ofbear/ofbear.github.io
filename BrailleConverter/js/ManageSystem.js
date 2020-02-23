@@ -11,7 +11,7 @@ class ManageSystem {
 			alert('お使いのブラウザではご利用できません。');
 		}
 
-		sr.start();
+		this.sr.start();
 	}
 
 }
