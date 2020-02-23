@@ -49,7 +49,7 @@ class SpeechRecognition {
 	}
 
 	result(e) {
-		txt = e.results[0][0].transcript;
+		const txt = e.results[0][0].transcript;
 		this.target.value += txt + "\r\n";
 	}
 
