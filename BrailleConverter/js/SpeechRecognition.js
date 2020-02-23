@@ -51,6 +51,7 @@ class SpeechRecognition {
 	result(e) {
 		const txt = e.results[0][0].transcript;
 		this.target.value += txt + "\r\n";
+		this.target.onchange();
 	}
 
 	end(e) {
